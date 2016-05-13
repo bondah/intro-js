@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<style>
+
+@import url(http://fonts.googleapis.com/css?family=PT+Serif|PT+Serif:b|PT+Serif:i);
+
+section {
+  background: #000;
+  color: #fff;
+  padding: 2em;
+  font-family: "PT Serif", Baskerville, Georgia;
+}
+
+#follow {
+  background: none;
+}
+
+.grey {
+  color: #777;
+}
+
+a:link,
+a:visited {
+  color: orange;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+</style>
+
+<section style="text-align:center;padding-top:2em;font-size:300%;">
+  Introduction to JavaScript
+</section>
+
+<section style="padding:5em 9em;">
+  <h1 style="text-align:center;font-size:200%">Get a code editor</h1>
+  <p>
+  <b><a href="https://notepad-plus-plus.org/">Download Notepad++</a></b>
+  <br>
+  or
+  <br>
+  <b><a href="http://brackets.io/">Download Brackets</a></b>
+</section>
+
+<section style="text-align:center;padding-top:2em;font-size:250%">
+  Where did JavaScript come from?
+</section>
+
+<section style="padding:5em 9em;">
+  <h1 style="text-align:center;font-size:200%">Origins</h1>
+  <p>
+  Created by Brendan Eich at Netscape in 1995
+  <br>
+  <br>
+  Has been standardized in the <b><a href="http://www.ecma-international.org/publications/standards/Ecma-262.htm">ECMAScript</a></b> specification since the late 90's
+  <br>
+  <br>
+  It's not related to Java!
+
+</section>
+
+<section style="padding:5em 9em;">
+  <h1 style="text-align:center;font-size:200%">Prevalence</h1>
+  <p>
+  HTML, CSS, and JavaScript have been the 3 core languages making up modern web pages
+  <br>
+  <br>
+  It is supported by all modern web browsers
+  <br>
+  <br>
+  Also used in desktop programs (widgets)
+</section>
+
+<section style="text-align:center;padding-top:2em;font-size:250%">
+  What is JavaScript?
+</section>
+
+<section style="padding:5em 9em;">
+  <h1 style="text-align:center;font-size:200%">Programming/Scripting</h1>
+  <p>
+  The main difference between programming and scripting is that scripting languages (like JavaScript!) don't have to be compiled
+  <br>
+  <br>
+  They also have less access to your computer's machine (like memory allocation)
+</section>
+
+<section style="padding:5em 9em;">
+  <h1 style="text-align:center;font-size:200%">JavaScript is:</h1>
+  <p>
+  <ol>
+  <li>An interpreted language (i.e. not compiled)</li>
+  <li>Object-Based (modular)</li>
+  <li>Similar to C++ and Python in how you write code</li>
+</section>
+
+<section style="text-align:center;padding-top:2em;font-size:250%">
+  Why do mappers care?
+</section>
+
+<section style="padding:5em 9em;">
+  <h1 style="text-align:center;font-size:200%">Useful libraries!</h1>
+  <p>
+  <b><a href="https://d3js.org/">Leaflet</a></b>
+  <br>
+  <br>
+  <b><a href="http://leafletjs.com/">D3</a></b>
+  <br>
+  <br>
+  <b><a href="http://openlayers.org/">OpenLayers</a></b>
+</section>
+
+<section style="text-align:center;padding-top:2em;font-size:250%">
+  What is a library?
+</section>
+
+<section style="padding:5em 9em;">
+  <h1 style="text-align:center;font-size:200%">Libraries</h1>
+  <p>
+  Pre-written JavaScript which allows for easy development
+  <br>
+  <br>
+  They let you create robust web application easily. Someone else has done all the hard work!
+</section>
+
+<section style="text-align:center;padding-top:2em;font-size:250%">
+  How do I start?
+</section>
+
+<section style="padding:5em 9em;">
+  <h1 style="text-align:center;font-size:200%">Let's go!</h1>
+  <p>
+  We'll focus on web-based JavaScript (since that's the majority of where you'll encounter and use it)
+  <br>
+  <br>
+  Find that code editor you installed and open it up!
+</section>
+
+<section style="padding:2em 9em;">
+  <h1 style="text-align:center;font-size:200%">Create an HTML file</h1>
+  <p>
+  <ol>
+  <li>Create a new html file on your computer</li>
+  <li>Open it in your code editor</li>
+  <li>Add the following to your html file</li>
+  <xml>
+  <xmp><SCRIPT language = "JavaScript">
+alert("Welcome to my test page!")
+</SCRIPT></xmp>
+  <li>Open your html file in your web browser</li>
+</section>
+
+<section style="padding:1em 9em;">
+  <p>
+  <ol>
+  <li>Add the following to your html file</li>
+  <xml>
+  <xmp><!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo">Display the result here.</p> 
+
+<script>
+// Code goes here
+</script>
+
+</body>
+</html></xmp>
+</section>
+
+<section style="padding:4em 9em;">
+  <h1 style="text-align:center;font-size:200%">Variables</h1>
+  <p>
+  Variables are containers that hold data values that can be referred to later in your code
+  <br>
+  <br>
+  They can be either global or local.
+  <br>
+  Global can be used anywhere
+  <br>
+  Local are specific to a function (more on functions later)
+</section>
+
+<section style="padding:3em 5em;">
+  <h1 style="text-align:center;font-size:200%">Variables</h1>
+  <p>
+  <ol>
+  <li>Add the following between your script tags</li>
+  <xml>
+  <xmp>var cityName = "Los Angeles";
+document.getElementById("demo").innerHTML = cityName;</xmp>
+  <li>Open your html file in your web browser</li>
+</section>
+
+<section style="padding:2em 5em;">
+  <h1 style="text-align:center;font-size:200%">Variables 2</h1>
+  <p>
+  <ol>
+  <li>Add the following variable</li>
+  <xml>
+  <xmp>var yearFounded = 1781;</xmp>
+  <li>Change your output to</li>
+  <xml>
+  <xmp>cityName + " was founded in " + yearFounded</xmp>
+  <li>Open your html file in your web browser</li>
+</section>
+
+<section style="padding:2em 5em;">
+  <h1 style="text-align:center;font-size:200%">Variables 3</h1>
+  <p>
+  <ol>
+  <li>Add the following variables</li>
+  <xml>
+  <xmp>var dateCurrent = new Date();
+var userName;
+userName = prompt("Enter your name", "")</xmp>
+  <li>Change your output to</li>
+  <xml>
+  <xmp>userName + " responded on " + dateCurrent</xmp>
+  <li>Open your html file in your web browser</li>
+</section>
+
+<section style="padding:1em 2em;">
+  <h1 style="text-align:center;font-size:200%">Objects</h1>
+  <p>
+  <ol>
+  <li>We already used a date object. There are also math and string objects built in.</li>
+  <xml>
+  <xmp></xmp>
+  <li>Add this code</li>
+  <xml>
+  <xmp>cityChars = cityName.length;
+currentYear = dateCurrent.getFullYear()
+ageCity = currentYear-yearFounded;</xmp>
+  <li>Change your output to</li>
+  <xml>
+  <xmp>cityName + " has " + cityChars + 
+  " characters and was founded " + ageCity + " years ago!"</xmp>
+</section>
+
+
+<section style="padding:4em 9em;">
+  <h1 style="text-align:center;font-size:200%">Functions</h1>
+  <p>
+   JavaScript function is a block of code that is designed to perform a particular task and is executed when it is called upon, or invoked.
+  <br>
+  <br>
+  The function must be called by something (such as an event)
+</section>
+
+<section style="padding:1em 4em;">
+  <h1 style="text-align:center;font-size:200%">Create a Function</h1>
+  <p>
+  <ol>
+  <li>Add the following code between the script tags</li>
+  <xml>
+  <xmp>function showAlert() {
+alert("I made a user-defined function!")
+}</xmp>
+  <li>Add this code in your html body</li>
+  <xml>
+  <xmp><button onclick="showAlert()">Click me</button></xmp>
+  <li>Open your html file in your web browser</li>
+</section>
+
+<section style="padding:1em 4em;">
+  <h1 style="text-align:center;font-size:200%">Functions 2</h1>
+  <p>
+  <ol>
+  <li>Add the following code between the script tags</li>
+  <xml>
+  <xmp>var userName;
+
+function newPage() {
+userName = prompt("Enter your name: ", "")
+document.write("<h1>Welcome " + userName + "!</h1>")
+}</xmp>
+  <li>Add this code in your html body</li>
+  <xml>
+  <xmp><a HREF="JavaScript:newPage()">Create-a-Page!</a></xmp>
+</section>
+
+<section style="padding:4em 9em;">
+  <h1 style="text-align:center;font-size:200%">Events</h1>
+  <p>
+   An event is something happening.
+  <br>
+  <br>
+  ... a page load
+  <br>
+  ... a button click
+  <br>
+  ... pressing a key
+  <br>
+  ... mouse over
+</section>
+
+<section style="padding:0em 1em;">
+  <h1 style="text-align:center;font-size:200%">Events</h1>
+  <p>
+  <ol>
+  <li>Add the following code between the script tags</li>
+  <xml>
+  <xmp>document.getElementById("demo").onmouseover = 
+function() {mouseOver()};
+document.getElementById("demo").onmouseout = 
+function() {mouseOut()};
+
+function mouseOver() {
+    document.getElementById("demo").style.color = "red";
+}
+function mouseOut() {
+    document.getElementById("demo").style.color = "black";
+}</xmp>
+</section>
+
+<section style="padding:2em 3em;">
+  <h1 style="text-align:center;font-size:200%">Events 2</h1>
+  <p>
+  <ol start = "2">
+  <li>Add this code in your html body</li>
+  <xml>
+  <xmp><h1 id="demo">Mouse over me</h1></xmp>
+  <li>Open your html file in your web browser</li>
+</section>
+
+<section style="padding:4em 9em;">
+  <h1 style="text-align:center;font-size:200%">Loops</h1>
+  <p>
+   Loops offer a way to do something repeatedly
+  <br>
+  <br>
+  for loop: repeats until a condition is false
+  <br>
+  while loop: repeats as long as a condition is true
+</section>
+
+<section style="padding:1em 3em;">
+  <h1 style="text-align:center;font-size:200%">Loops</h1>
+  <p>
+  <ol>
+  <li>Add this code</li>
+  <xml>
+  <xmp>function myFunction() {
+    var text = "";
+    var i;
+    for (i = 0; i < 5; i++) {
+        text += "The number is " + i + "<br>";
+    }
+    document.getElementById("demo").innerHTML = text;
+}</xmp>
+</section>
+
+<section style="padding:2em 3em;">
+  <h1 style="text-align:center;font-size:200%">Loops 2</h1>
+  <p>
+  <ol start = "2">
+  <li>Add this code in your html body</li>
+  <xml>
+  <xmp><button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p></xmp>
+  <li>Open your html file in your web browser</li>
+</section>
+
+<section style="text-align:center;padding-top:2em;font-size:250%">
+  Back it up...
+</section>
+
+<section style="padding:3em 5em;">
+  <h1 style="text-align:center;font-size:200%">Tasks for web maps</h1>
+  <p>
+  <ol>
+  <li>Create objects (i.e. maps and data)</li>
+  <li>Set variables (i.e. containers for storing objects and data values)</li>
+  <li>Modify object properties (i.e. the location and appearance of object)</li>
+  <li>Write functions (i.e. blocks of code that only run when prompted to run)</li>
+  <li>Listen for events (i.e. what happens to your map when a user clicks on an element of your page)</li>
+</section>
+
+<section style="padding:3em 5em;">
+  <h1 style="text-align:center;font-size:200%">Object: maps</h1>
+  <p>
+  An object example is:
+  <xml><xmp>L.map('map',{ center: [32.5, -101.4], zoom: 14});</xmp>
+  The object from the Leaflet library is "map"
+  <br>
+  We are setting the properties of map for zoom and center
+</section>
+
+<section style="padding:3em 5em;">
+  <h1 style="text-align:center;font-size:200%">GeoJSON</h1>
+  <p>
+  GeoJSON stands for Geographic JavaScript Opject Notation
+  <br>
+  <br>
+  It's a JavaScript object with geographic data!
+</section>
+
+<section style="padding:1em 5em;">
+  <h1 style="text-align:center;font-size:200%">Function: maps</h1>
+  <p>
+  A function example is:
+  <xml><xmp>function onMapClick(e) {
+    popup
+        .setLatLng(e.latlng)
+        .setContent("Latitude: " + e.latlng.toString())
+        .openOn(map);
+}
+</xmp>
+  The function name in OnMapClick and it will need to be called to run.
+  <br>
+</section>
+
+<section style="padding:1em 5em;">
+  <h1 style="text-align:center;font-size:200%">Events: maps</h1>
+  <p>
+  An event example is:
+  <xml><xmp>// Create event listener for the Add Coffee Shops Button
+document.getElementById("addButton").
+addEventListener("click", addCoffeeShops);
+</xmp>
+  We'll need a button for the user to click:
+  <xml><xmp><div id="controls" style="margin: 15px;">
+    <button id="addButton">Show All Coffee Shops</button>
+</div>
+</xmp>
+  <br>
+</section>
+
+<section style="padding:1em 5em;">
+  <h1 style="text-align:center;font-size:200%">Resources</h1>
+  <p>
+	<a href="http://www.w3schools.com/js/default.asp">W3 Schools JavaScript Docs and Tutorials</a>
+	<br>
+	<a href="https://www.codecademy.com/learn/javascript">CodeAcademy: JavaScript </a>
+</section>
+
+<section style="text-align:center;padding-top:2em;font-size:200%;">
+  Thanks!
+  <br>
+  <a href="mailto:bond.harper@arup.com">bond.harper@arup.com</a> 
+</section>
+
+<section style="padding:5em 10em;font-size:100%">
+  <p>Made with Stack by <a href="http://bost.ocks.org/mike/" rel="author">Mike Bostock</a>
+    <br>available on <a href="https://github.com/mbostock/stack">GitHub</a>
+    <br>under the <a href="https://github.com/mbostock/stack/blob/gh-pages/LICENSE">BSD license</a>
+</section>
+
+<script src="d3.v3.min.js"></script>
+<script src="stack.v1.min.js"></script>
+<script>
+
+var mystack = stack()
+    .on("activate", activate)
+    .on("deactivate", deactivate);
+
+var section = d3.selectAll("section"),
+    follow = d3.select("#follow"),
+    followAnchor = d3.select("#follow-anchor"),
+    lorenz = d3.select("#lorenz"),
+    followIndex = section[0].indexOf(follow.node()),
+    lorenzIndex = section[0].indexOf(lorenz.node());
+
+function refollow() {
+  followAnchor.style("top", (followIndex + (1 - mystack.scrollRatio()) / 2 - d3.event.offset) * 100 + "%");
+}
+
+function activate(d, i) {
+  if (i === followIndex) mystack.on("scroll.follow", refollow);
+  if (i === lorenzIndex) startLorenz();
+}
+
+function deactivate(d, i) {
+  if (i === followIndex) mystack.on("scroll.follow", null);
+  if (i === lorenzIndex) stopLorenz();
+}
+
+
+</script>
